@@ -1,11 +1,13 @@
+/* GLOBAL RESET */
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f6f6f6;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  color: #111;
 }
 
 /* HEADER */
@@ -13,7 +15,17 @@ header {
   background: #111;
   color: #fff;
   text-align: center;
-  padding: 15px;
+  padding: 16px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 14px;
 }
 
 /* NAVBAR */
@@ -35,19 +47,39 @@ nav a:hover {
   background: #444;
 }
 
-/* CONTAINER */
+/* MAIN CONTAINER */
 .container {
-  padding: 12px;
+  padding: 14px;
+}
+
+/* PROFILE (HOME PAGE) */
+.profile-box {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.profile-box img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #25D366;
+}
+
+.profile-box p {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 /* PRODUCT CARD */
 .product-card {
   background: #fff;
   max-width: 420px;
-  margin: auto;
-  padding: 15px;
+  margin: 0 auto 18px;
+  padding: 16px;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
 }
 
 /* IMAGES */
@@ -69,13 +101,20 @@ nav a:hover {
   background: #000;
 }
 
-/* TEXT */
-h3 {
-  margin-top: 15px;
+/* HEADINGS */
+h2 {
+  margin-top: 0;
 }
 
+h3 {
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+/* LISTS */
 ul {
   padding-left: 18px;
+  margin-top: 6px;
 }
 
 /* PRICE */
@@ -83,7 +122,22 @@ del {
   color: #888;
 }
 
-/* BUTTON */
+/* FORMS */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+form textarea {
+  resize: none;
+}
+
+/* BUTTONS */
 button {
   width: 100%;
   background: #25D366;
@@ -92,7 +146,7 @@ button {
   padding: 14px;
   font-size: 16px;
   border-radius: 8px;
-  margin-top: 15px;
+  margin-top: 14px;
   cursor: pointer;
 }
 
@@ -102,7 +156,6 @@ button:hover {
 
 /* FOOTER */
 footer {
-  margin-top: 20px;
   background: #111;
   color: #fff;
   text-align: center;
@@ -110,13 +163,13 @@ footer {
   font-size: 13px;
 }
 
-/* STICKY WHATSAPP */
+/* STICKY WHATSAPP BUTTON */
 .whatsapp-float {
   position: fixed;
   bottom: 18px;
   right: 18px;
   background: #25D366;
-  color: white;
+  color: #fff;
   padding: 14px 16px;
   border-radius: 50%;
   font-size: 22px;
@@ -124,28 +177,13 @@ footer {
   text-decoration: none;
 }
 
-/* DESKTOP ADJUSTMENT */
+/* DESKTOP ADJUSTMENTS */
 @media (min-width: 768px) {
   .product-card {
     max-width: 600px;
   }
-  .profile-box {
-  text-align: center;
-  margin-bottom: 20px;
-}
 
-.profile-box img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #25D366;
-}
-
-.profile-box p {
-  margin-top: 8px;
-  font-weight: bold;
-  font-size: 14px;
-}
-
+  header h1 {
+    font-size: 26px;
+  }
 }
