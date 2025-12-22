@@ -16,6 +16,7 @@
 <nav>
   <a href="index.html">Home</a>
   <a href="products.html">Products</a>
+  <a href="reviews.html">Reviews</a>
   <a href="contact.html">Contact</a>
 </nav>
 
@@ -24,8 +25,8 @@
   <div class="product-card">
 
     <!-- Product Images -->
-    <img src="./images/creatine-front.jpg" alt="Creatine Front">
-    <img src="./images/creatine-back.jpg" alt="Creatine Back">
+    <img src="./images/creatine-front.jpg" alt="Have itt Creatine Front">
+    <img src="./images/creatine-back.jpg" alt="Have itt Creatine Back">
 
     <!-- Product Video -->
     <div class="video-container">
@@ -55,14 +56,22 @@
     <h3>Pricing</h3>
     <p>
       <del>MRP: ₹899</del><br>
-      <strong>Selling Price: ₹599</strong><br>
+      <strong>Selling Price: ₹699</strong><br>
       Offer Price: ₹499
     </p>
 
-    <!-- WhatsApp Order Button -->
-    <button onclick="orderNow('Have itt Creatine Monohydrate')">
-      Interested – Order on WhatsApp
-    </button>
+    <!-- ORDER FORM -->
+    <h3>Place Your Order</h3>
+
+    <form onsubmit="submitOrder(event, 'Have itt Creatine Monohydrate')">
+      <input type="text" placeholder="Your Name" required>
+      <input type="tel" placeholder="Mobile Number" required>
+      <textarea placeholder="Delivery Address" required></textarea>
+
+      <button type="submit">
+        Interested – Order on WhatsApp
+      </button>
+    </form>
 
   </div>
 
@@ -72,12 +81,16 @@
   <p>Designed by M THRISHANK REDDY</p>
 </footer>
 
+<!-- WhatsApp + Order Tracking Script -->
 <script src="js/whatsapp.js"></script>
+
+<!-- Visitor Tracking Script -->
+<script src="js/tracking.js"></script>
 
 <!-- Sticky WhatsApp Button -->
 <a class="whatsapp-float" href="https://wa.me/918790966832" target="_blank">
   💬
 </a>
-<script src="js/tracking.js"></script>
+
 </body>
 </html>
