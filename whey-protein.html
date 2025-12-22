@@ -16,6 +16,7 @@
 <nav>
   <a href="index.html">Home</a>
   <a href="products.html">Products</a>
+  <a href="reviews.html">Reviews</a>
   <a href="contact.html">Contact</a>
 </nav>
 
@@ -27,7 +28,7 @@
     <img src="./images/whey-front.jpg" alt="Have itt Whey Protein Front">
     <img src="./images/whey-back.jpg" alt="Have itt Whey Protein Back">
 
-    <!-- Product Description -->
+    <!-- Advantages -->
     <h3>Uses & Advantages</h3>
     <ul>
       <li>Supports lean muscle growth</li>
@@ -46,15 +47,23 @@
     <!-- Pricing -->
     <h3>Pricing</h3>
     <p>
-      <del>MRP: ₹3999</del><br>
-      <strong>Selling Price: ₹2899</strong><br>
-      <span>Offer Price: ₹2499</span>
+      <del>MRP: ₹2999</del><br>
+      <strong>Selling Price: ₹2299</strong><br>
+      Offer Price: ₹2199
     </p>
 
-    <!-- Order Button -->
-    <button onclick="orderNow('Have itt Whey Protein – Double Chocolate')">
-      Interested – Order on WhatsApp
-    </button>
+    <!-- ORDER FORM -->
+    <h3>Place Your Order</h3>
+
+    <form onsubmit="submitOrder(event, 'Have itt Whey Protein – Double Chocolate')">
+      <input type="text" placeholder="Your Name" required>
+      <input type="tel" placeholder="Mobile Number" required>
+      <textarea placeholder="Delivery Address" required></textarea>
+
+      <button type="submit">
+        Interested – Order on WhatsApp
+      </button>
+    </form>
 
   </div>
 
@@ -64,12 +73,16 @@
   <p>Designed by M THRISHANK REDDY</p>
 </footer>
 
+<!-- WhatsApp + Google Sheet Script -->
 <script src="js/whatsapp.js"></script>
+
+<!-- Visitor Tracking Script -->
+<script src="js/tracking.js"></script>
 
 <!-- Sticky WhatsApp Button -->
 <a class="whatsapp-float" href="https://wa.me/918790966832" target="_blank">
   💬
 </a>
-<script src="js/tracking.js"></script>
+
 </body>
 </html>
