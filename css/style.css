@@ -3,19 +3,20 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+  background: #f6f6f6;
 }
 
+/* HEADER */
 header {
   background: #111;
-  color: white;
+  color: #fff;
   text-align: center;
   padding: 15px;
 }
 
+/* NAVBAR */
 nav {
   display: flex;
   justify-content: center;
@@ -24,8 +25,8 @@ nav {
 }
 
 nav a {
-  color: white;
-  padding: 10px 15px;
+  color: #fff;
+  padding: 10px 14px;
   text-decoration: none;
   font-size: 14px;
 }
@@ -34,40 +35,64 @@ nav a:hover {
   background: #444;
 }
 
-section, .container {
-  padding: 15px;
+/* CONTAINER */
+.container {
+  padding: 12px;
 }
 
+/* PRODUCT CARD */
 .product-card {
-  background: white;
-  margin: 10px auto;
+  background: #fff;
+  max-width: 420px;
+  margin: auto;
   padding: 15px;
-  border-radius: 8px;
-  max-width: 350px;
-  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
+/* IMAGES */
 .product-card img {
   width: 100%;
-  max-width: 250px;
-  height: auto;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 10px auto;
-}
-
-button {
-  background: #25D366;
-  color: white;
-  border: none;
-  padding: 12px;
-  font-size: 16px;
-  width: 100%;
   border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* VIDEO */
+.video-container {
+  width: 100%;
+  margin: 12px 0;
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 8px;
+  background: #000;
+}
+
+/* TEXT */
+h3 {
+  margin-top: 15px;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+/* PRICE */
+del {
+  color: #888;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  background: #25D366;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 15px;
   cursor: pointer;
 }
 
@@ -75,15 +100,31 @@ button:hover {
   background: #1ebd5a;
 }
 
+/* FOOTER */
 footer {
+  margin-top: 20px;
   background: #111;
-  color: white;
+  color: #fff;
   text-align: center;
   padding: 10px;
   font-size: 13px;
 }
 
-/* MOBILE OPTIMIZATION */
+/* STICKY WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  background: #25D366;
+  color: white;
+  padding: 14px 16px;
+  border-radius: 50%;
+  font-size: 22px;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+/* DESKTOP ADJUSTMENT */
 @media (min-width: 768px) {
   .product-card {
     max-width: 600px;
