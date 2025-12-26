@@ -34,6 +34,12 @@ City: Hyderabad`;
     "https://wa.me/918790966832?text=" + encodeURIComponent(msg),
     "_blank"
   );
+function openWhatsApp(message) {
+  window.open(
+    "https://wa.me/918790966832?text=" + encodeURIComponent(message),
+    "_blank"
+  );
+}
 
   form.reset();
 }
