@@ -182,6 +182,50 @@ footer {
   .product-card {
     max-width: 600px;
   }
+  /* CERTIFICATION BADGES */
+.cert-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.cert-badges img {
+  width: 70px;
+  filter: grayscale(100%);
+}
+
+.cert-badges img:hover {
+  filter: none;
+}
+
+/* QUALITY BADGES (SPRITE IMAGE) */
+.quality-badges {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0 18px;
+}
+
+.badge {
+  width: 70px;
+  height: 70px;
+  background-image: url("../images/quality-badges.png.jpeg");
+  background-size: 400% 100%;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+.badge:hover {
+  filter: none;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.badge.gluten { background-position: 0% 0%; }
+.badge.banned { background-position: 33.33% 0%; }
+.badge.sugar  { background-position: 66.66% 0%; }
+.badge.amino  { background-position: 100% 0%; }
+
 
   header h1 {
     font-size: 26px;
