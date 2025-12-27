@@ -230,8 +230,7 @@ footer {
   header h1 {
     font-size: 26px;
   }
-}
-/* IMAGE SLIDER (SWIPE) */
+  /* IMAGE SLIDER (SWIPE) */
 .image-slider {
   display: flex;
   gap: 10px;
@@ -253,3 +252,5 @@ footer {
 .image-slider::-webkit-scrollbar {
   display: none;
 }
+}
+
