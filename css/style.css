@@ -231,3 +231,25 @@ footer {
     font-size: 26px;
   }
 }
+/* IMAGE SLIDER (SWIPE) */
+.image-slider {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 12px;
+}
+
+.image-slider img {
+  min-width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+}
+
+/* Hide scrollbar (clean look) */
+.image-slider::-webkit-scrollbar {
+  display: none;
+}
